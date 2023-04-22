@@ -1,44 +1,44 @@
 # Better Comment
 
-Better Comment는 GitHub에서 코멘트를 작성할 때, 해당 코멘트가 공격적이지 않고, 받는 사람의 기분을 상하지 않는지 분석해주는 크롬 확장 프로그램입니다. OpenAI의 API를 사용하여 코멘트를 분석하고, 개선된 문구를 제안합니다.
+Better Comment is a Chrome extension that analyzes your comments as you write them on GitHub to make sure they're not offensive and won't hurt the recipient's feelings. It uses OpenAI's API to analyze your comments and suggest improved wording.
 
-## 설치 방법
+## How to install
 
-1. 이 저장소를 로컬 컴퓨터로 클론합니다.
-    
+1. clone this repository to your local computer.
+
     ```bash
    git clone https://github.com/paperspoon/better-comment.git
     ```
-   
-2. 크롬 브라우저에서 `chrome://extensions/`로 이동합니다.
 
-3. 오른쪽 상단의 "개발자 모드" 토글을 활성화합니다.
+2. In the Chrome browser, navigate to `chrome://extensions/`.
 
-4. 왼쪽 상단의 "압축 해제된 확장 프로그램을 로드합니다." 버튼을 클릭하고, 클론한 저장소의 디렉토리를 선택합니다.
+3. Activate the "Developer Mode" toggle in the top right corner.
 
-## 사용 방법
+4. Click the top left "Load unpacked" button, and select the directory of the repository you cloned.
 
-1. 확장 프로그램이 설치되면, 크롬 확장 프로그램 아이콘 영역에 새로운 아이콘을 확인할 수 있습니다.
+## How to use
 
-2. GitHub 페이지에서 코멘트를 작성하는 텍스트 영역에 입력한 후 폼에서 포커스가 떠나면 (onBlur), 코멘트가 분석되어 개선된 문구가 표시됩니다.
+1. Once the extension is installed, you'll see a new icon in the Chrome Extension Icons area.
 
-## 설정
+2. on a GitHub page, type in the text area to make a comment and when the focus leaves the form (onBlur), the comment is analyzed and the improved wording is displayed.
 
-1. OpenAI API 키를 사용하려면, 아래 주소에서 API 키를 발급받으세요.
+## Setup
+
+1. To use an OpenAI API key, obtain an API key from the address below.
    https://platform.openai.com/
 
-2. 확장 프로그램 아이콘을 클릭하여 팝업창에서 API키를 입력한후 Save 버튼을 클릭합니다.
+2. click the extension icon, enter the API key in the pop-up window, and click the Save button.
 
-3. 필요에 따라 프롬프트를 바꾸거나 기타 옵션을 수정하실 수 있습니다.
+3. You can change the prompt or modify other options as needed.
 
 ## TODO
 
-- [ ] 코드를 포함해서 프롬프트를 작성할 수 있는 옵션 제공 (토큰 소모가 많을듯?)
+- [ ] Provide the option to write prompts with code (Likely consume a lot of tokens?)
 
-## 기여
+## Contribute
 
-프로젝트에 기여하려면, 이 저장소를 포크한 후에 변경 사항을 커밋하고 풀 리퀘스트를 생성해주세요. 풀 리퀘스트가 검토된 후 프로젝트에 기여한 내용이 추가될 수 있습니다.
+To contribute to the project, fork this repository, commit your changes, and create a pull request. After the pull request is reviewed, your contribution may be added to the project.
 
-## 라이센스
+## License
 
-이 프로젝트는 [MIT 라이센스](LICENSE)를 따릅니다.
+This project is licensed under the [MIT License](LICENSE).
